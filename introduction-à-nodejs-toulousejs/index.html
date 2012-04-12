@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Introduction à Node.js</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='js/slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    
+    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+        
+      <article>
+         <h1>
+            Introduction à 
+            <br />
+            <a href="http://nodejs.org/">
+            <img src="http://nodejs.org/images/logo-light.png" style="margin-left: 450px;width: 350px"/>
+            </a>
+         </h1>
+         <p> 
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          11/04/2012
+         </p>
+      </article>
+
+      <article>
+        <h1>
+          Rémy Loubradou
+        </h1>
+        <p>
+          <br />  
+          <br />
+          @lbdremy
+          <br />
+          <a href="https://github.com/lbdremy/"><img src="https://a248.e.akamai.net/assets.github.com/images/modules/about_page/octocat.png?1329920549" width="60px"/></a>
+          <a href="https://twitter.com/#!/lbdremy"><img src="https://si0.twimg.com/a/1333667448/images/logos/twitter_newbird_blue.png" width="60px"/></a>
+        </p>
+      </article>
+      
+      <article>
+         <h3>
+            Node.js kesado?
+         </h3>
+        <div>
+           <br />
+           <br />
+           <br /> 
+           <p>
+             Une plateforme de développement pour écrire des programmes réseaux en javascript.
+           </p>
+        </div>
+      </article>
+
+      <article>
+        <h3>
+          Qu'est ce que Node.js a de spécial?
+        </h3>
+        <div>
+           <br />
+           <br />
+           <br /> 
+           <ul class="build">
+            <li>Basé sur une boucle événementielle</li>
+            <li>Les opérations effectuées sur le disque, le réseau ou une BDD sont asynchrones, non bloquantes</li>
+            <li>Votre programme Javascript tourne dans un seul thread</li>
+            <li>Fournie un ensemble de bibliothèques bas niveau de nature asynchrone pour compléter javascript</li>
+           </ul>
+        </div>
+      </article>
+
+      <article class='smaller'>
+        <h3>
+          Hello World!
+        </h3>
+      <section>
+         <pre>console.log('Hello World');</pre>
+         <p>
+            Aussi simple que ça!
+         </p>
+      </section>
+      </article>
+
+      <article>
+        <h3>
+          Hello World 2!
+        </h3>
+        <section>
+         <pre>
+var http = require('http');
+var server = http.createServer(function(req,res){
+   res.writeHead(200,{'Content-Type' : 'text/plain'});
+   res.write('Hello');
+   res.end('World');
+});
+server.listen(3000);</pre>
+        </section>
+      </article>
+
+      <article>
+        <h3>
+          Chat
+        </h3>
+        <p>
+         A vos telnets!
+        </p>
+        <section>
+         <pre>
+var net = require('net');
+var sockets = [];
+var server = net.createServer(function(socket){
+   ...
+});
+server.listen(4000);</pre>
+        </section>
+        <p>
+         Voir le code complet sur le fichier chat.js dans le dossier examples.
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          Etendre Node.js avec les modules
+        </h3>
+        <br />
+        <br />
+        <br />
+        <div>
+            <a href="http://npmjs.org">   
+            <img class="centered" src="http://npmjs.org/npm.png" width="400px"/>
+            </a>
+            <br />
+            
+            <br />
+            <a href="http://wiki.commonjs.org/wiki/Modules/1.0">
+            <img class="centered" src="http://wiki.commonjs.org/images/3/3a/Website-Logo.png" width="400px"/>
+            </a>
+        </div>
+      </article>
+
+      <article>
+        <h3>
+          Modules populaires
+        </h3>
+        
+        <ul>
+         <li><a href="http://expressjs.org">Express</a></li>
+         <li><a href="http://socket.io/">Socket.io</a></li>
+         <li><a href="http://mongoosejs.com/">Mongoose</a></li>
+         <li><a href="http://jade-lang.com">Jade</li>
+         <li><a href="http://learnboost.github.com/stylus/">Stylus</a></li>
+         <li><a href="http://visionmedia.github.com/mocha/">Mocha</a>,<a href="http://vowsjs.org/"> Vows</a></li>
+         <li><a href="https://github.com/flatiron/nock">Nock</a></li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>
+          S'intégrer dans la communauté
+        </h3>
+        
+        <p>
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com">
+         <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/GitHub.svg/567px-GitHub.svg.png" width="150px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="http://travis-ci.org/">
+         <img src="http://www.testically.org/wp-content/uploads/2011/11/twitter.png" alt="travis-ci" width="50px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="http://npmjs.org/">
+         <img src="http://npmjs.org/npm.png" alt="npm" width="150px"/>
+         </a>
+         </p>
+         <ul>
+            <li>Niveau 1: Codez avec Node.js</li>
+            <li>Niveau 2: Regardez les projets</li>
+            <li>Niveau 3: Exposez vos problèmes (issues)</li>
+            <li>Niveau 4: Forkez un projet</li>
+            <li>Niveau 5: Envoyez des "pull request"</li>
+            <li>Niveau 6: Publiez vos modules sur npm</li>
+            <li>Niveau 7: Intégration continue avec Travis</li>
+         </ul>
+      </article>
+      
+      <article>
+        <h3>
+          Personnalités de la communauté
+        </h3>
+        <ul>
+          <li>TJ Holowaychuk ou <a href="https://github.com/visionmedia">@visionmedia</a>: <br />Express, Jade, Stylus </li><br />
+          <li>Ryan Dahl ou <a href="https://github.com/ry">@ry</a>: <br />créateur de Node.js</li><br />
+          <li>Elijah Insua ou <a href="https://github.com/tmpvar/">@tmpvar</a>: <br /> <a href="https://github.com/tmpvar/jsdom">jsdom</a></li><br />
+          <li>Charlie Robbins ou <a href="https://github.com/indexzero">@indexzero</a>:<br /> <a href="https://github.com/nodejitsu/forever">forever</a>,<a href="https://github.com/flatiron/winston"> winston</a> </li>
+        </ul>
+      </article>
+      
+      <article>
+        <h1>
+          Questions?
+        </h1>
+      </article>
+
+    </section>
+
+  </body>
+</html>
