@@ -2,7 +2,6 @@
 
 ##Introduction à Node.js
 ### le 11/04/2012 [@toulousejs](http://toulousejs.org/)
-Pour voir la présentation, clonez ce dépot git et utilisez votre navigateur pour voir la présentation.
-Pour cela ouvrir le fichier `index.html` contenu dans le dossier `introduction-à-nodejs-toulousejs` dans votre navigateur.
+Vous pouvez la voir [ici](http://lbdremy.github.com/presentations/introduction-%C3%A0-nodejs-toulousejs/#1)
 
 L'exemple du chat TCP est disponible dans `introduction-à-nodejs-toulousejs/examples/chat.js`.
