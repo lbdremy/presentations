@@ -97,7 +97,7 @@ body {
 }
 
 .slides.template-default > article:not(.nobackground):not(.biglogo) {
-  background: url(/images/logo-small-toulouse-js.png) 710px 625px no-repeat;   
+  background: url(images/logo-small-toulouse-js.png) 710px 625px no-repeat;   
   background-color: white;  
 } 
 
