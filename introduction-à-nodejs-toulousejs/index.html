@@ -5,7 +5,7 @@
 
   Authors: Luke Mahé (code)
            Marcin Wichary (code and design)
-           
+
            Dominic Mazzoni (browser compatibility)
            Charles Chen (ChromeVox support)
 
@@ -20,27 +20,27 @@
     <script
       src='js/slides.js'></script>
   </head>
-  
+
   <style>
     /* Your individual styles here, or just use inline styles if that’s
        what you want. */
-    
-    
+
+
   </style>
 
   <body style='display: none'>
 
     <section class='slides layout-regular template-default'>
-        
+
       <article>
          <h1>
-            Introduction à 
+            Introduction à
             <br />
             <a href="http://nodejs.org/">
             <img src="http://nodejs.org/images/logo-light.png" style="margin-left: 450px;width: 350px"/>
             </a>
          </h1>
-         <p> 
+         <p>
           <br />
           <br />
           <br />
@@ -55,7 +55,7 @@
           Rémy Loubradou
         </h1>
         <p>
-          <br />  
+          <br />
           <br />
           @lbdremy
           <br />
@@ -63,17 +63,57 @@
           <a href="https://twitter.com/#!/lbdremy"><img src="https://si0.twimg.com/a/1333667448/images/logos/twitter_newbird_blue.png" width="60px"/></a>
         </p>
       </article>
-      
+
+      <article>
+        <h3>
+          Vous saurez ...
+        </h3>
+        <br />
+        <br />
+        <ul class="build">
+          <li>Expliquer ce qu'est Node.js</li>
+          <li>Faire le plus simple des serveurs web</li>
+          <li>Faire le plus geek et simple des chats</li>
+          <li>Evoluer et communiquer avec la communauté</li>
+          <li>En bref, partir du bon pied avec Node.js</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+          Nous allons voir ...
+        </h3>
+        <div>
+          <br />
+          <br />
+          <ul class="build">
+            <li>Node.js kesako?</li>
+            <li>Qu'est ce que Node.js a de spécial?</li>
+            <li>Hello World!</li>
+            <li>Hello World v2!</li>
+            <li>Etendre Node.js avec les modules</li>
+            <li>Modules populaires</li>
+            <li>S'intégrer dans la communauté</li>
+            <li>Personnalités de la communauté</li>
+          </ul>
+        </div>
+      </article>
+
       <article>
          <h3>
-            Node.js kesado?
+            Node.js kesako?
          </h3>
         <div>
            <br />
-           <br />
-           <br /> 
            <p>
-             Une plateforme de développement pour écrire des programmes réseaux en javascript.
+             Une plateforme de développement pour écrire des programmes en javascript.
+           </p>
+          <br />
+           <p>
+            Le principe directeur: <b>I/O opérations ne sont pas égales</b>
+            <br />
+            <br />
+              <img class="centered" src="http://www.nearinfinity.com/blogs/assets/jkunkle/latency-bar-graph.png" height="250"/>
            </p>
         </div>
       </article>
@@ -83,15 +123,15 @@
           Qu'est ce que Node.js a de spécial?
         </h3>
         <div>
-           <br />
-           <br />
-           <br /> 
-           <ul class="build">
-            <li>Basé sur une boucle événementielle</li>
+          <br />
+          <br />
+          <br />
+          <ul class="build">
             <li>Les opérations effectuées sur le disque, le réseau ou une BDD sont asynchrones, non bloquantes</li>
+            <li>Basé sur une boucle événementielle</li>
             <li>Votre programme Javascript tourne dans un seul thread</li>
             <li>Fournie un ensemble de bibliothèques bas niveau de nature asynchrone pour compléter javascript</li>
-           </ul>
+          </ul>
         </div>
       </article>
 
@@ -152,14 +192,14 @@ server.listen(4000);</pre>
         <br />
         <br />
         <div>
-            <a href="http://npmjs.org">   
+            <a href="http://npmjs.org">
             <img class="centered" src="http://npmjs.org/npm.png" width="400px"/>
             </a>
             <br />
-            
+
             <br />
             <a href="http://wiki.commonjs.org/wiki/Modules/1.0">
-            <img class="centered" src="http://wiki.commonjs.org/images/3/3a/Website-Logo.png" width="400px"/>
+            <img class="centered" src="http://uploads.siteduzero.com/files/378001_379000/378414.png" width="400px"/>
             </a>
         </div>
       </article>
@@ -168,7 +208,7 @@ server.listen(4000);</pre>
         <h3>
           Modules populaires
         </h3>
-        
+
         <ul>
          <li><a href="http://expressjs.org">Express</a></li>
          <li><a href="http://socket.io/">Socket.io</a></li>
@@ -179,12 +219,12 @@ server.listen(4000);</pre>
          <li><a href="https://github.com/flatiron/nock">Nock</a></li>
         </ul>
       </article>
-      
+
       <article>
         <h3>
           S'intégrer dans la communauté
         </h3>
-        
+
         <p>
         <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com">
@@ -205,7 +245,7 @@ server.listen(4000);</pre>
             <li>Niveau 7: Intégration continue avec Travis</li>
          </ul>
       </article>
-      
+
       <article>
         <h3>
           Personnalités de la communauté
@@ -217,7 +257,7 @@ server.listen(4000);</pre>
           <li>Charlie Robbins ou <a href="https://github.com/indexzero">@indexzero</a>:<br /> <a href="https://github.com/nodejitsu/forever">forever</a>,<a href="https://github.com/flatiron/winston"> winston</a> </li>
         </ul>
       </article>
-      
+
       <article>
         <h1>
           Questions?
